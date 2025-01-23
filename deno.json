@@ -3,7 +3,7 @@
     "lume/": "https://deno.land/x/lume@v2.5.0/"
   },
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --allow-net --allow-read --allow-write=./_site --allow-sys -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
